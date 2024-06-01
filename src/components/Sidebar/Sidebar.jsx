@@ -46,7 +46,7 @@ const Sidebar = () => {
           </div>
         ) : null}
       </div>
-      <div className="bottom recent-entry">
+      {/* <div className="bottom recent-entry">
         <div className="bottom-item recent-entry">
           <img src={assets.question_icon} />
           {extended ? <p> Help </p> : null}
@@ -59,7 +59,7 @@ const Sidebar = () => {
           <img src={assets.setting_icon} />
           {extended ? <p> Settings </p> : null}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

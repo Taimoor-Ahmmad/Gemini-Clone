@@ -110,8 +110,8 @@ const Main = () => {
               placeholder="Enter a prompt here"
             />
             <div>
-              <img src={assets.gallery_icon} alt="Gallery Icon" />
-              <img src={assets.mic_icon} alt="Mic Icon" />
+              {/* <img src={assets.gallery_icon} alt="Gallery Icon" />
+              <img src={assets.mic_icon} alt="Mic Icon" /> */}
               <img
                 onClick={() => {
                   onSent();
