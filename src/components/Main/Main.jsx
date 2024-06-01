@@ -1,6 +1,6 @@
+import { useContext, useEffect } from "react";
 import { assets } from "../../assets/assets";
 import "./Main.css";
-import { useContext, useEffect } from "react";
 import { Context } from "../../Context/Context.jsx";
 
 const Main = () => {
@@ -18,6 +18,19 @@ const Main = () => {
     console.log("resultData:", resultData);
     console.log("loading:", loading);
   }, [resultData, loading]);
+
+  // Function to handle input change
+  const handleInputChange = (e) => {
+    setInput(e.target.value); // Update the state with the new input
+  };
+
+  // Function to handle Enter key press
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault(); // Prevents the default form submission behavior
+      onSent(input); // Trigger the send function with the current input
+    }
+  };
 
   return (
     <div className="main">
@@ -79,6 +92,24 @@ const Main = () => {
                 <img src={assets.code_icon} alt="Code Icon" />
               </div>
             </div>
+            <div className="search-box">
+              <input
+                onChange={handleInputChange} // Use the updated handler here
+                onKeyPress={handleKeyPress} // Add key press listener
+                value={input}
+                type="text"
+                placeholder="Enter a prompt here"
+              />
+              <div>
+                <img
+                  onClick={() => {
+                    onSent(input); // Pass the current input to onSent
+                  }}
+                  src={assets.send_icon}
+                  alt="Send Icon"
+                />
+              </div>
+            </div>
           </>
         ) : (
           <div className="result">
@@ -100,28 +131,6 @@ const Main = () => {
             </div>
           </div>
         )}
-
-        <div className="main-bottom">
-          <div className="search-box">
-            <input
-              onChange={(e) => setInput(e.target.value)}
-              value={input}
-              type="text"
-              placeholder="Enter a prompt here"
-            />
-            <div>
-              {/* <img src={assets.gallery_icon} alt="Gallery Icon" />
-              <img src={assets.mic_icon} alt="Mic Icon" /> */}
-              <img
-                onClick={() => {
-                  onSent();
-                }}
-                src={assets.send_icon}
-                alt="Send Icon"
-              />
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
